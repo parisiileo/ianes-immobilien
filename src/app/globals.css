@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Design system Ianes Immobilien — light mode
+ *
+ * Fondo bianco caldo, testo quasi nero, oro brunito come unico accento,
+ * bordi da 1px e vetro chiaro. I nomi dei token sono semantici:
+ *   surface*  = sfondi        ink = testo/elementi scuri
+ *   champagne = accento       line = hairline
+ * ------------------------------------------------------------------ */
+@theme {
+  --color-surface: #fbfaf8;
+  --color-surface-soft: #f3f0ea;
+  --color-surface-mute: #e9e4db;
+
+  --color-ink: #14130e;
+  --color-ink-soft: #2b2924;
+
+  /* Oro brunito. Il #D4AF37 classico su bianco si ferma a 2,3:1, quindi:
+       champagne      → accento testuale, 4,6:1 su fondo chiaro
+       champagne-deep → fondo dei bottoni con testo bianco, 7:1
+       champagne-soft → solo sopra le fotografie e per i dettagli decorativi */
+  --color-champagne: #8a6a12;
+  --color-champagne-soft: #c9a227;
+  --color-champagne-deep: #634b0b;
+
+  --color-line: rgba(20, 19, 14, 0.14);
+  /* Usato sui bordi dei campi: sotto 0.34 non arriva al 3:1 richiesto per gli
+     elementi d'interfaccia e il campo sparisce sul fondo chiaro. */
+  --color-line-strong: rgba(20, 19, 14, 0.34);
+
+  --font-display: var(--font-cormorant), "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --tracking-luxe: 0.28em;
+
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --shadow-panel: 0 24px 60px -28px rgba(20, 19, 14, 0.32);
+  --shadow-float: 0 18px 50px -24px rgba(20, 19, 14, 0.28);
+
+  --animate-fade-up: fade-up 0.9s var(--ease-luxe) both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    /* Lenis gestisce lo scroll: lo smooth nativo darebbe due inerzie sovrapposte. */
+    scroll-behavior: auto;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-champagne);
+    color: var(--color-surface);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-champagne);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(20, 19, 14, 0.18);
+    border: 3px solid var(--color-surface);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-champagne);
+  }
+}
+
+@layer components {
+  /* Etichetta maiuscoletta spaziata sopra ogni titolo di sezione */
+  .eyebrow {
+    font-size: 0.6875rem;
+    letter-spacing: var(--tracking-luxe);
+    text-transform: uppercase;
+    color: var(--color-champagne);
+    font-weight: 500;
+  }
+
+  /* Pannelli sospesi sul contenuto: opachi, non trasparenti, perché sotto
+     possono esserci fotografie o testo che renderebbero illeggibile il menu. */
+  .panel {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-panel);
+  }
+
+  /* Vetro chiaro: usato solo sopra le immagini, mai sopra il testo. */
+  .glass {
+    background: rgba(251, 250, 248, 0.82);
+    backdrop-filter: blur(20px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: var(--shadow-float);
+  }
+
+  /* Vetro scuro: per i controlli appoggiati su fotografie scure. */
+  .glass-dark {
+    background: rgba(20, 19, 14, 0.42);
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .glass-light {
+    background: rgba(20, 19, 14, 0.035);
+    border: 1px solid var(--color-line);
+  }
+
+  .gold-text {
+    background: linear-gradient(100deg, #6f5310 0%, #c9a227 45%, #a07a17 70%, #6f5310 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Variante per i titoli appoggiati su fotografie scure. */
+  .gold-text-on-dark {
+    background: linear-gradient(100deg, #c9a227 0%, #f3e6bd 42%, #e0c469 62%, #b08d2a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-champagne), transparent);
+  }
+
+  /* Contenitore standard delle sezioni */
+  .shell {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .shell {
+      padding-inline: 4rem;
+    }
+  }
+
+  /* Contenitore largo del listing: le fotografie sono la cosa che si guarda
+     davvero, e a 88rem con la colonna dei filtri accanto le schede restavano
+     strette. Stessi margini laterali di .shell, solo più respiro al centro. */
+  .shell-wide {
+    width: 100%;
+    max-width: 112rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .shell-wide {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .shell-wide {
+      padding-inline: 4rem;
+    }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer utilities {
+  .split-line > span {
+    display: inline-block;
+    will-change: transform, opacity;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
