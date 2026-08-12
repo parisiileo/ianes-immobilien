@@ -15,6 +15,9 @@
 
   --color-ink: #14130e;
   --color-ink-soft: #2b2924;
+  /* Inchiostro attenuato per etichette e didascalie: 5,7:1 su `surface`,
+     equivalente a `text-ink/65` ma disponibile anche fuori dalle utility. */
+  --color-ink-muted: #656460;
 
   /* Oro brunito. Il #D4AF37 classico su bianco si ferma a 2,3:1, quindi:
        champagne      → accento testuale, 4,6:1 su fondo chiaro
@@ -29,10 +32,13 @@
      elementi d'interfaccia e il campo sparisce sul fondo chiaro. */
   --color-line-strong: rgba(20, 19, 14, 0.34);
 
-  --font-display: var(--font-cormorant), "Times New Roman", serif;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
 
-  --tracking-luxe: 0.28em;
+  /* Era 0.28em. La spaziatura estrema sulle maiuscolette è lo stilema più
+     riconoscibile dei template generati: a 0.16em l'etichetta resta ariosa
+     ma smette di annunciarsi. */
+  --tracking-luxe: 0.16em;
 
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
 
@@ -111,12 +117,18 @@
 }
 
 @layer components {
-  /* Etichetta maiuscoletta spaziata sopra ogni titolo di sezione */
+  /*
+    Etichetta di gruppo: intesta le colonne del footer, i blocchi di filtri e
+    l'indice dei testi legali.
+    Non è più una didascalia decorativa sopra ogni titolo di sezione — quelle
+    sono state tolte — quindi non è più oro: il colore d'accento su
+    un'etichetta di servizio la faceva pesare più del titolo che introduceva.
+  */
   .eyebrow {
     font-size: 0.6875rem;
     letter-spacing: var(--tracking-luxe);
     text-transform: uppercase;
-    color: var(--color-champagne);
+    color: var(--color-ink-muted);
     font-weight: 500;
   }
 
@@ -148,21 +160,6 @@
   .glass-light {
     background: rgba(20, 19, 14, 0.035);
     border: 1px solid var(--color-line);
-  }
-
-  .gold-text {
-    background: linear-gradient(100deg, #6f5310 0%, #c9a227 45%, #a07a17 70%, #6f5310 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  /* Variante per i titoli appoggiati su fotografie scure. */
-  .gold-text-on-dark {
-    background: linear-gradient(100deg, #c9a227 0%, #f3e6bd 42%, #e0c469 62%, #b08d2a 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
 
   .gold-rule {

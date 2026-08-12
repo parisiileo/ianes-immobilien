@@ -63,7 +63,7 @@ export function Lightbox({
       className="fixed inset-0 z-[95] flex flex-col bg-surface/97 backdrop-blur-xl"
     >
       <div className="flex items-center justify-between border-b border-line px-6 py-5">
-        <p className="text-[0.65rem] uppercase tracking-[0.22em] text-ink/60">
+        <p className="text-[0.65rem] uppercase tracking-[0.16em] text-ink/60">
           {index + 1} / {images.length}
         </p>
         <button

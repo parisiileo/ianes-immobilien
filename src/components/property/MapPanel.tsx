@@ -276,7 +276,7 @@ export function MapPanel({
                 className="panel pointer-events-auto flex items-center justify-between gap-4 p-4"
               >
                 <span>
-                  <span className="block text-[0.6rem] uppercase tracking-[0.22em] text-champagne">
+                  <span className="block text-[0.6rem] uppercase tracking-[0.16em] text-champagne">
                     {property.location.city}
                   </span>
                   <span className="mt-1 block font-display text-lg text-ink">
@@ -329,7 +329,7 @@ export function MapPanel({
       </div>
 
       {!compact && (
-        <p className="absolute left-4 top-4 text-[0.6rem] uppercase tracking-[0.22em] text-ink/60">
+        <p className="absolute left-4 top-4 text-[0.6rem] uppercase tracking-[0.16em] text-ink/60">
           {t.listing.mapHint}
         </p>
       )}

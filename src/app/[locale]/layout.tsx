@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Archivo, Newsreader } from "next/font/google";
 import "../globals.css";
 
 import { LOCALES, LOCALE_TAGS, isLocale, type Locale } from "@/i18n/config";
@@ -20,18 +20,26 @@ import { fetchPublishedProperties } from "@/lib/properties/queries";
 /** Gli immobili cambiano di rado: HTML statico rigenerato ogni 5 minuti. */
 export const revalidate = 300;
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
+/*
+  Newsreader + Archivo al posto di Cormorant Garamond + Inter.
+  La coppia precedente è quella di default di mezzo web di settore e si
+  riconosce a colpo d'occhio; queste due hanno più carattere e restano
+  neutre. Newsreader tiene i pesi leggeri (200-800) su cui è tarata la scala
+  tipografica, quindi il cambio non tocca il resto del design system.
+*/
+const newsreader = Newsreader({
+  subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-newsreader",
   display: "swap",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
+/* latin-ext copre le lettere accentate del tedesco nei testi DE. */
+const archivo = Archivo({
+  subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500"],
-  variable: "--font-inter",
+  variable: "--font-archivo",
   display: "swap",
 });
 
@@ -84,7 +92,7 @@ export default async function LocaleLayout({
   const properties = await fetchPublishedProperties();
 
   return (
-    <html lang={LOCALE_TAGS[typedLocale]} className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang={LOCALE_TAGS[typedLocale]} className={`${newsreader.variable} ${archivo.variable}`}>
       <body className="bg-surface text-ink antialiased">
         <JsonLd data={[organizationSchema(typedLocale), webSiteSchema(typedLocale)]} />
 

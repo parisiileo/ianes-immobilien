@@ -186,7 +186,7 @@ export function ValuationForm() {
         <button
           type="submit"
           disabled={busy}
-          className="w-full bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
+          className="w-full bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
         >
           {busy ? t.common.sending : t.valuation.submit}
         </button>

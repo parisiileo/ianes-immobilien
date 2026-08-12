@@ -73,7 +73,7 @@ export function Footer() {
                         href={profile.url}
                         target="_blank"
                         rel="noopener noreferrer me"
-                        aria-label={`${profile.name} — ${COMPANY.brandName}`}
+                        aria-label={`${profile.name}, ${COMPANY.brandName}`}
                         className="flex h-10 w-10 items-center justify-center border border-line text-ink/60 transition-colors hover:border-champagne hover:text-champagne"
                       >
                         <Icon size={16} strokeWidth={1.4} aria-hidden />
@@ -131,7 +131,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={14} strokeWidth={1.4} className="mt-1 shrink-0 text-champagne" />
                 <span>
-                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-ink/60">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.14em] text-ink/60">
                     {t.footer.localOffice}
                   </span>
                   {COMPANY.localOffice.street}
@@ -142,7 +142,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={14} strokeWidth={1.4} className="mt-1 shrink-0 text-champagne/60" />
                 <span>
-                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-ink/60">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.14em] text-ink/60">
                     {t.footer.registeredOffice}
                   </span>
                   {COMPANY.registeredOffice.street}

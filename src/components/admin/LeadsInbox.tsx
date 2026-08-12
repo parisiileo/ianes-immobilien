@@ -165,7 +165,7 @@ export function LeadsInbox() {
           <button
             type="button"
             onClick={() => void reload()}
-            className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+            className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
           >
             <RefreshCw size={13} strokeWidth={1.4} className={cn(loading && "animate-spin")} />
             {t.common.reset}
@@ -174,7 +174,7 @@ export function LeadsInbox() {
             type="button"
             onClick={exportCsv}
             disabled={visible.length === 0}
-            className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne disabled:opacity-50"
+            className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne disabled:opacity-50"
           >
             <Download size={13} strokeWidth={1.4} />
             {t.admin.inbox.exportCsv}
@@ -208,7 +208,7 @@ export function LeadsInbox() {
           buttonClassName="py-2.5"
         />
         {pendingCount > 0 && (
-          <span className="border border-champagne/50 px-3 py-2 text-[0.62rem] uppercase tracking-[0.18em] text-champagne">
+          <span className="border border-champagne/50 px-3 py-2 text-[0.62rem] uppercase tracking-[0.14em] text-champagne">
             {fill(t.admin.inbox.pendingBadge, { count: pendingCount })}
           </span>
         )}
@@ -243,12 +243,12 @@ export function LeadsInbox() {
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div className="min-w-56 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="border border-champagne/50 px-2.5 py-1 text-[0.58rem] uppercase tracking-[0.18em] text-champagne">
+                      <span className="border border-champagne/50 px-2.5 py-1 text-[0.58rem] uppercase tracking-[0.14em] text-champagne">
                         {t.admin.inbox.kinds[lead.kind]}
                       </span>
                       <span
                         className={cn(
-                          "border px-2.5 py-1 text-[0.58rem] uppercase tracking-[0.18em]",
+                          "border px-2.5 py-1 text-[0.58rem] uppercase tracking-[0.14em]",
                           lead.handled
                             ? "border-line text-ink/60"
                             : "border-ink/25 text-ink/75",
@@ -256,7 +256,7 @@ export function LeadsInbox() {
                       >
                         {lead.handled ? t.admin.inbox.handled : t.admin.inbox.pending}
                       </span>
-                      <span className="text-[0.62rem] uppercase tracking-[0.18em] text-ink/60">
+                      <span className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">
                         {lead.locale.toUpperCase()}
                       </span>
                       <time dateTime={lead.createdAt} className="text-xs text-ink/60">
@@ -335,7 +335,7 @@ export function LeadsInbox() {
 
                 {payloadEntries.length > 0 && (
                   <div className="mt-4">
-                    <p className="text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">
+                    <p className="text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">
                       {t.admin.inbox.details}
                     </p>
                     <dl className="mt-2 grid gap-x-8 gap-y-1 text-xs sm:grid-cols-2 lg:grid-cols-3">

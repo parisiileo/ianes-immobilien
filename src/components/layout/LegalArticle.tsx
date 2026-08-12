@@ -32,7 +32,7 @@ export function LegalArticle({ document, showCookieButton = false }: { document:
             <button
               type="button"
               onClick={openPreferences}
-              className="mt-8 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+              className="mt-8 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
             >
               {t.footer.cookiePreferences}
             </button>
@@ -40,7 +40,7 @@ export function LegalArticle({ document, showCookieButton = false }: { document:
         </nav>
 
         <article className="max-w-3xl">
-          <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">
+          <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">
             {t.legal.lastUpdate}: {formatDate(document.updated, locale)}
           </p>
           <p className="mt-6 text-[0.95rem] leading-[1.85] text-ink/60">{document.intro}</p>
@@ -67,7 +67,7 @@ export function LegalArticle({ document, showCookieButton = false }: { document:
           ))}
 
           <footer className="mt-16 border-t border-line pt-8 text-xs leading-relaxed text-ink/60">
-            <p className="uppercase tracking-[0.2em] text-ink/60">{t.legal.dataController}</p>
+            <p className="uppercase tracking-[0.14em] text-ink/60">{t.legal.dataController}</p>
             <p className="mt-3">
               {COMPANY.legalName} · {COMPANY.registeredOffice.street}, {COMPANY.registeredOffice.postalCode}{" "}
               {COMPANY.registeredOffice.city} ({COMPANY.registeredOffice.province})

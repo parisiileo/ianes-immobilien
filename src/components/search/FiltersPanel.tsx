@@ -185,7 +185,7 @@ export function FiltersPanel({
 
           <div className="space-y-10">
             <div data-filter-block>
-              <p className="mb-4 text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">{t.filters.amenities}</p>
+              <p className="mb-4 text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">{t.filters.amenities}</p>
               <div className="flex flex-wrap gap-2.5">
                 {AMENITIES.map((amenity) => (
                   <Chip
@@ -207,7 +207,7 @@ export function FiltersPanel({
             </div>
 
             <div data-filter-block>
-              <p className="mb-4 text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">{t.filters.energy}</p>
+              <p className="mb-4 text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">{t.filters.energy}</p>
               <div className="flex flex-wrap gap-2.5">
                 {ENERGY_CLASSES.map((energyClass) => (
                   <Chip
@@ -238,7 +238,7 @@ export function FiltersPanel({
           <button
             type="button"
             onClick={() => onChange({ ...EMPTY_FILTERS })}
-            className="text-left text-[0.7rem] uppercase tracking-[0.2em] text-ink/60 transition-colors hover:text-ink"
+            className="text-left text-[0.7rem] uppercase tracking-[0.14em] text-ink/60 transition-colors hover:text-ink"
           >
             {t.filters.clearAll}
           </button>
@@ -248,7 +248,7 @@ export function FiltersPanel({
               onApply();
               onClose();
             }}
-            className="group flex items-center justify-center gap-3 bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+            className="group flex items-center justify-center gap-3 bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
           >
             {t.filters.showResults}
             <span className="font-display text-base leading-none">{resultCount}</span>

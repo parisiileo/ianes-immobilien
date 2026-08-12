@@ -54,12 +54,9 @@ export function FeaturedQuickView() {
       <div className="shell">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
-            <Reveal>
-              <p className="eyebrow">{t.home.featured.eyebrow}</p>
-            </Reveal>
             <SplitReveal
               as="h2"
-              className="mt-4 font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.04] text-ink"
+              className="font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.04] text-ink"
             >
               {t.home.featured.title}
             </SplitReveal>
@@ -68,7 +65,7 @@ export function FeaturedQuickView() {
           <Reveal delay={0.15}>
             <Link
               href={link("proprieta")}
-              className="group flex items-center gap-3 border-b border-line pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+              className="group flex items-center gap-3 border-b border-line pb-2 text-[0.7rem] uppercase tracking-[0.16em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
             >
               {t.common.viewAll}
               <ArrowUpRight
@@ -131,7 +128,7 @@ export function FeaturedQuickView() {
               </div>
 
               <div className="flex flex-col p-7 md:p-9">
-                <p className="text-[0.6rem] uppercase tracking-[0.22em] text-champagne">
+                <p className="text-[0.6rem] uppercase tracking-[0.16em] text-champagne">
                   {preview.location.city}
                   {preview.location.zone ? ` · ${preview.location.zone}` : ""} · {t.common.reference}{" "}
                   {preview.reference}
@@ -149,7 +146,7 @@ export function FeaturedQuickView() {
                     { label: t.property.energyClass, value: preview.energyClass },
                   ].map((fact) => (
                     <div key={fact.label} className="bg-surface px-5 py-4">
-                      <dt className="text-[0.55rem] uppercase tracking-[0.18em] text-ink/60">{fact.label}</dt>
+                      <dt className="text-[0.55rem] uppercase tracking-[0.14em] text-ink/60">{fact.label}</dt>
                       <dd className="mt-1.5 font-display text-lg text-ink">{fact.value}</dd>
                     </div>
                   ))}
@@ -172,7 +169,7 @@ export function FeaturedQuickView() {
                   <Link
                     href={link(`proprieta/${preview.slug}`)}
                     className={cn(
-                      "flex items-center gap-2 bg-ink px-6 py-3 text-[0.66rem] uppercase tracking-[0.18em]",
+                      "flex items-center gap-2 bg-ink px-6 py-3 text-[0.66rem] uppercase tracking-[0.14em]",
                       "text-surface transition-colors hover:bg-champagne-deep",
                     )}
                   >
@@ -181,7 +178,7 @@ export function FeaturedQuickView() {
                   </Link>
                   <a
                     href={`tel:${COMPANY.phoneHref}`}
-                    className="flex items-center gap-2 border border-line px-6 py-3 text-[0.66rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+                    className="flex items-center gap-2 border border-line px-6 py-3 text-[0.66rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
                   >
                     <Phone size={13} strokeWidth={1.4} />
                     {t.property.callNow}

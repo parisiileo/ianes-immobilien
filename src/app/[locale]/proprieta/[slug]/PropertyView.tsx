@@ -118,7 +118,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
     ...(property.renovationYear
       ? ([[t.property.renovation, String(property.renovationYear)]] as Array<[string, string]>)
       : []),
-    [t.property.location, `${property.location.address} — ${property.location.city} (${property.location.province})`],
+    [t.property.location, `${property.location.address}, ${property.location.city} (${property.location.province})`],
   ];
 
   /**
@@ -175,7 +175,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
 
         <div className="shell flex min-h-[92svh] flex-col justify-end pb-16 pt-36">
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-2 text-[0.65rem] uppercase tracking-[0.2em] text-ink/60">
+            <ol className="flex flex-wrap items-center gap-2 text-[0.65rem] uppercase tracking-[0.14em] text-ink/60">
               <li>
                 <Link href={link()} className="hover:text-champagne">
                   {t.nav.home}
@@ -212,7 +212,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
             <dl className="flex flex-wrap gap-x-10 gap-y-5">
               {keyFacts.map((fact) => (
                 <div key={fact.label}>
-                  <dt className="flex items-center gap-2 text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">
+                  <dt className="flex items-center gap-2 text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">
                     <fact.icon size={12} strokeWidth={1.3} className="text-champagne" />
                     {fact.label}
                   </dt>
@@ -222,7 +222,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
             </dl>
 
             <div className="text-right">
-              <p className="text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">{t.property.stickyPrice}</p>
+              <p className="text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">{t.property.stickyPrice}</p>
               <p className="mt-2 font-display text-4xl text-champagne">{priceLabel}</p>
             </div>
           </div>
@@ -239,7 +239,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
               </h2>
               <Link
                 href={link("proprieta")}
-                className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.2em] text-ink/60 transition-colors hover:text-champagne"
+                className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.14em] text-ink/60 transition-colors hover:text-champagne"
               >
                 <ArrowLeft size={13} strokeWidth={1.4} />
                 {t.property.backToList}
@@ -274,7 +274,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
             </Reveal>
 
             <Reveal delay={0.15} className="mt-12">
-              <h3 className="text-[0.65rem] uppercase tracking-[0.22em] text-champagne">
+              <h3 className="text-[0.65rem] uppercase tracking-[0.16em] text-champagne">
                 {t.property.highlights}
               </h3>
               <ul className="mt-6 space-y-3">
@@ -288,7 +288,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
             </Reveal>
 
             <Reveal delay={0.2} className="mt-12">
-              <h3 className="text-[0.65rem] uppercase tracking-[0.22em] text-champagne">
+              <h3 className="text-[0.65rem] uppercase tracking-[0.16em] text-champagne">
                 {t.property.amenities}
               </h3>
               <div className="mt-6 flex flex-wrap gap-2.5">
@@ -331,19 +331,19 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
                   <button
                     type="button"
                     onClick={() => setBrochureOpen(true)}
-                    className="bg-champagne-deep px-6 py-3.5 text-[0.68rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+                    className="bg-champagne-deep px-6 py-3.5 text-[0.68rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
                   >
                     {t.property.requestBrochure}
                   </button>
                   <Link
                     href={`${link("contatti")}?rif=${property.reference}`}
-                    className="border border-line px-6 py-3.5 text-center text-[0.68rem] uppercase tracking-[0.2em] text-ink/80 transition-colors hover:border-champagne hover:text-champagne"
+                    className="border border-line px-6 py-3.5 text-center text-[0.68rem] uppercase tracking-[0.14em] text-ink/80 transition-colors hover:border-champagne hover:text-champagne"
                   >
                     {t.property.bookViewing}
                   </Link>
                   <a
                     href={`tel:${COMPANY.phoneHref}`}
-                    className="flex items-center justify-center gap-2 text-[0.68rem] uppercase tracking-[0.2em] text-ink/60 transition-colors hover:text-champagne"
+                    className="flex items-center justify-center gap-2 text-[0.68rem] uppercase tracking-[0.14em] text-ink/60 transition-colors hover:text-champagne"
                   >
                     <Phone size={13} strokeWidth={1.4} />
                     {COMPANY.phone}
@@ -399,7 +399,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
 
           <Link
             href={`${termsHref}#${DIAGNOSIS_TERMS_ANCHOR}`}
-            className="group mt-10 inline-flex items-center gap-3 text-[0.68rem] uppercase tracking-[0.2em] text-ink transition-colors hover:text-champagne"
+            className="group mt-10 inline-flex items-center gap-3 text-[0.68rem] uppercase tracking-[0.14em] text-ink transition-colors hover:text-champagne"
           >
             {t.property.diagnosis.moreInfo}
             <ArrowRight
@@ -443,7 +443,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
                       href={floorPlan.src}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-6 inline-block text-[0.65rem] uppercase tracking-[0.2em] text-champagne"
+                      className="mt-6 inline-block text-[0.65rem] uppercase tracking-[0.14em] text-champagne"
                     >
                       PDF
                     </a>
@@ -512,7 +512,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
       >
         <div className="shell flex items-center justify-between gap-4 py-4">
           <div className="min-w-0">
-            <p className="truncate text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">
+            <p className="truncate text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">
               {t.common.reference} {property.reference} · {property.location.city}
             </p>
             <p className="truncate font-display text-xl text-ink">{priceLabel}</p>
@@ -521,7 +521,7 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <a
               href={`tel:${COMPANY.phoneHref}`}
-              className="flex items-center gap-2 border border-line px-4 py-3 text-[0.65rem] uppercase tracking-[0.18em] text-ink/75 transition-colors hover:border-champagne hover:text-champagne"
+              className="flex items-center gap-2 border border-line px-4 py-3 text-[0.65rem] uppercase tracking-[0.14em] text-ink/75 transition-colors hover:border-champagne hover:text-champagne"
             >
               <Phone size={13} strokeWidth={1.4} />
               <span className="hidden sm:inline">{t.property.callNow}</span>
@@ -529,13 +529,13 @@ export function PropertyView({ initialProperty }: { initialProperty: Property })
             <button
               type="button"
               onClick={() => setBrochureOpen(true)}
-              className="hidden border border-line px-5 py-3 text-[0.65rem] uppercase tracking-[0.18em] text-ink/75 transition-colors hover:border-champagne hover:text-champagne md:block"
+              className="hidden border border-line px-5 py-3 text-[0.65rem] uppercase tracking-[0.14em] text-ink/75 transition-colors hover:border-champagne hover:text-champagne md:block"
             >
               {t.property.requestBrochure}
             </button>
             <Link
               href={`${link("contatti")}?rif=${property.reference}`}
-              className="bg-champagne-deep px-5 py-3 text-[0.65rem] uppercase tracking-[0.18em] text-surface transition-colors hover:bg-ink"
+              className="bg-champagne-deep px-5 py-3 text-[0.65rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
             >
               {t.property.stickyCta}
             </Link>

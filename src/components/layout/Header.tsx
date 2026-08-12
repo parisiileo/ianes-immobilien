@@ -150,7 +150,7 @@ export function Header() {
 
   const linkClass = (active: boolean) =>
     cn(
-      "group relative py-2 text-[0.7rem] uppercase tracking-[0.24em] transition-colors duration-300",
+      "group relative py-2 text-[0.7rem] uppercase tracking-[0.16em] transition-colors duration-300",
       light
         ? active
           ? "text-champagne-soft"
@@ -242,7 +242,7 @@ export function Header() {
               <a
                 href={`tel:${COMPANY.phoneHref}`}
                 className={cn(
-                  "hidden items-center gap-2 border px-4 py-2.5 text-[0.7rem] uppercase tracking-[0.2em] transition-all duration-300 xl:flex",
+                  "hidden items-center gap-2 border px-4 py-2.5 text-[0.7rem] uppercase tracking-[0.14em] transition-all duration-300 xl:flex",
                   light
                     ? "border-white/35 text-white/90 hover:border-white hover:bg-white/10"
                     : "border-line text-ink/75 hover:border-champagne hover:text-champagne",
@@ -301,7 +301,7 @@ export function Header() {
                 <li className="pt-3">
                   <Link
                     href={link("proprieta")}
-                    className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne"
+                    className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.16em] text-champagne"
                   >
                     {t.common.viewAll}
                     <ArrowUpRight size={13} strokeWidth={1.4} />
@@ -327,7 +327,7 @@ export function Header() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                   </div>
                   <div className="absolute inset-x-0 bottom-0 p-4">
-                    <p className="text-[0.6rem] uppercase tracking-[0.24em] text-champagne-soft">
+                    <p className="text-[0.6rem] uppercase tracking-[0.16em] text-champagne-soft">
                       {property.location.city}
                     </p>
                     <p className="mt-1 font-display text-lg leading-tight text-white">

@@ -42,7 +42,7 @@ export default async function CookiePolicyPage({ params }: { params: Promise<{ l
           locale,
         )}
       />
-      <PageHeader eyebrow={t.footer.legalTitle} title={document.title} crumbs={[{ label: t.cookie.policyLink }]} />
+      <PageHeader title={document.title} crumbs={[{ label: t.cookie.policyLink }]} />
       <LegalArticle document={document} showCookieButton />
     </>
   );

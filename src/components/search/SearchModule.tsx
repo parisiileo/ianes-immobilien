@@ -176,12 +176,12 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
 
   const budgetTouched = filters.priceMax < DEFAULT_PRICE_RANGE[1] || filters.priceMin > DEFAULT_PRICE_RANGE[0];
   const budgetLabel = budgetTouched
-    ? `${formatPriceCompact(filters.priceMin, locale)} — ${formatPriceCompact(filters.priceMax, locale)}`
+    ? `${formatPriceCompact(filters.priceMin, locale)} – ${formatPriceCompact(filters.priceMax, locale)}`
     : t.common.any;
 
   const cellClass =
     "flex min-w-0 flex-1 flex-col items-start gap-0.5 px-5 py-3 text-left transition-colors hover:bg-surface-soft";
-  const cellLabel = "text-[0.58rem] uppercase tracking-[0.2em] text-ink/60";
+  const cellLabel = "text-[0.58rem] uppercase tracking-[0.14em] text-ink/60";
   const cellValue = "w-full truncate text-sm text-ink";
 
   return (
@@ -199,7 +199,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
               else setOpen(false);
             }}
             className={cn(
-              "relative pb-1.5 text-[0.68rem] uppercase tracking-[0.24em] transition-colors duration-300",
+              "relative pb-1.5 text-[0.68rem] uppercase tracking-[0.16em] transition-colors duration-300",
               onPhoto
                 ? mode === item.key
                   ? "text-white"
@@ -254,7 +254,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-label={t.search.openFilters}
-              className="flex items-center gap-2 px-4 text-[0.62rem] uppercase tracking-[0.18em] text-ink/60 transition-colors hover:bg-surface-soft hover:text-ink"
+              className="flex items-center gap-2 px-4 text-[0.62rem] uppercase tracking-[0.14em] text-ink/60 transition-colors hover:bg-surface-soft hover:text-ink"
             >
               <SlidersHorizontal size={14} strokeWidth={1.4} />
               {activeCount > 0 && (
@@ -274,7 +274,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
         <button
           type="button"
           onClick={submit}
-          className="flex items-center gap-2 bg-champagne-deep px-6 text-[0.66rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+          className="flex items-center gap-2 bg-champagne-deep px-6 text-[0.66rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
         >
           <Search size={14} strokeWidth={2} />
           <span className="hidden sm:inline">
@@ -310,7 +310,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
           <div className="grid gap-6 md:grid-cols-2">
             {/* Località con autocomplete */}
             <div data-mega-block>
-              <span className="mb-2 block text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">
+              <span className="mb-2 block text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">
                 {t.search.locationLabel}
               </span>
               <div
@@ -354,7 +354,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
                     }}
                     className="panel z-[200] overflow-y-auto overscroll-contain py-2"
                   >
-                    <p className="px-4 pb-1.5 text-[0.6rem] uppercase tracking-[0.22em] text-ink/60">
+                    <p className="px-4 pb-1.5 text-[0.6rem] uppercase tracking-[0.16em] text-ink/60">
                       {filters.query.trim() ? t.search.suggestions : t.search.popular}
                     </p>
                     {suggestions.map((suggestion) => (
@@ -429,7 +429,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
           </div>
 
           <div className="mt-7" data-mega-block>
-            <p className="mb-3 text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">{t.filters.amenities}</p>
+            <p className="mb-3 text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">{t.filters.amenities}</p>
             <div className="flex flex-wrap gap-2">
               {AMENITIES.slice(0, 8).map((amenity) => (
                 <Chip
@@ -456,7 +456,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
           <button
             type="button"
             onClick={() => setFilters({ ...EMPTY_FILTERS, listingType: mode === "rent" ? "rent" : "sale" })}
-            className="text-[0.68rem] uppercase tracking-[0.2em] text-ink/60 transition-colors hover:text-ink"
+            className="text-[0.68rem] uppercase tracking-[0.14em] text-ink/60 transition-colors hover:text-ink"
           >
             {t.filters.clearAll}
           </button>
@@ -466,7 +466,7 @@ export function SearchModule({ tone = "default" }: { tone?: "default" | "onPhoto
               setOpen(false);
               submit();
             }}
-            className="flex items-center gap-3 bg-ink px-7 py-3.5 text-[0.68rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-champagne-deep"
+            className="flex items-center gap-3 bg-ink px-7 py-3.5 text-[0.68rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-champagne-deep"
           >
             {fill(t.listing.showingResults, { count: matching.length })}
           </button>

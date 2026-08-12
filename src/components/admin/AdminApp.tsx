@@ -201,7 +201,7 @@ export function AdminApp() {
           <p className="mt-3 text-sm text-ink/60">{t.admin.login.subtitle}</p>
 
           <label className="mt-8 block">
-            <span className="mb-2 block text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">
+            <span className="mb-2 block text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">
               {t.admin.login.email}
             </span>
             <input
@@ -215,7 +215,7 @@ export function AdminApp() {
           </label>
 
           <label className="mt-4 block">
-            <span className="mb-2 block text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">
+            <span className="mb-2 block text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">
               {t.admin.login.password}
             </span>
             <input
@@ -233,7 +233,7 @@ export function AdminApp() {
           <button
             type="submit"
             disabled={signingIn}
-            className="mt-6 w-full bg-champagne-deep px-8 py-4 text-[0.68rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
+            className="mt-6 w-full bg-champagne-deep px-8 py-4 text-[0.68rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
           >
             {signingIn ? t.admin.login.signingIn : t.admin.login.submit}
           </button>
@@ -277,7 +277,7 @@ export function AdminApp() {
           <button
             type="button"
             onClick={() => void signOut()}
-            className="mt-8 flex items-center gap-2 border border-line px-5 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+            className="mt-8 flex items-center gap-2 border border-line px-5 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
           >
             <LogOut size={13} strokeWidth={1.4} />
             {t.admin.nav.logout}
@@ -328,8 +328,7 @@ export function AdminApp() {
     <div className="px-5 py-28 md:px-10">
       <header className="flex flex-wrap items-end justify-between gap-6 pb-6">
         <div>
-          <p className="eyebrow">{t.nav.admin}</p>
-          <h1 className="mt-4 font-display text-[clamp(2.2rem,4vw,3.4rem)] text-ink">{t.admin.list.title}</h1>
+          <h1 className="font-display text-[clamp(2.2rem,4vw,3.4rem)] text-ink">{t.admin.list.title}</h1>
           <p className="mt-2 text-xs text-ink/60">{session.user.email}</p>
         </div>
 
@@ -347,7 +346,7 @@ export function AdminApp() {
               <button
                 type="button"
                 onClick={() => void reload()}
-                className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+                className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
               >
                 <RefreshCw size={13} strokeWidth={1.4} className={cn(loading && "animate-spin")} />
                 {t.common.reset}
@@ -355,7 +354,7 @@ export function AdminApp() {
               <button
                 type="button"
                 onClick={exportJson}
-                className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+                className="flex items-center gap-2 border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
               >
                 <Download size={13} strokeWidth={1.4} />
                 {t.admin.list.exportJson}
@@ -363,7 +362,7 @@ export function AdminApp() {
               <button
                 type="button"
                 onClick={() => setEditing(draftProperty())}
-                className="flex items-center gap-2 bg-champagne-deep px-5 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-surface transition-colors hover:bg-ink"
+                className="flex items-center gap-2 bg-champagne-deep px-5 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
               >
                 <Plus size={13} strokeWidth={1.6} />
                 {t.admin.list.newProperty}
@@ -398,7 +397,7 @@ export function AdminApp() {
             aria-selected={tab === key}
             onClick={() => setTab(key)}
             className={cn(
-              "-mb-px flex items-center gap-2 border-b-2 px-5 py-3 text-[0.66rem] uppercase tracking-[0.18em] transition-colors",
+              "-mb-px flex items-center gap-2 border-b-2 px-5 py-3 text-[0.66rem] uppercase tracking-[0.14em] transition-colors",
               tab === key
                 ? "border-champagne text-champagne"
                 : "border-transparent text-ink/60 hover:text-ink",
@@ -428,7 +427,7 @@ export function AdminApp() {
               <button
                 type="button"
                 onClick={() => setEditing(draftProperty())}
-                className="mt-8 inline-flex items-center gap-2 bg-champagne-deep px-6 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-surface transition-colors hover:bg-ink"
+                className="mt-8 inline-flex items-center gap-2 bg-champagne-deep px-6 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
               >
                 <Plus size={13} strokeWidth={1.6} />
                 {t.admin.list.newProperty}
@@ -447,7 +446,7 @@ export function AdminApp() {
                   </div>
 
                   <div className="min-w-52 flex-1">
-                    <p className="text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">
+                    <p className="text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">
                       {property.reference} · {property.location.city}
                     </p>
                     <p className="mt-1 font-display text-xl text-ink">
@@ -464,13 +463,13 @@ export function AdminApp() {
                   <div className="flex flex-wrap gap-2">
                     <span
                       className={cn(
-                        "border px-3 py-1.5 text-[0.6rem] uppercase tracking-[0.18em]",
+                        "border px-3 py-1.5 text-[0.6rem] uppercase tracking-[0.14em]",
                         property.published ? "border-champagne/50 text-champagne" : "border-ink/20 text-ink/60",
                       )}
                     >
                       {property.published ? t.admin.list.published : t.admin.list.draft}
                     </span>
-                    <span className="border border-line px-3 py-1.5 text-[0.6rem] uppercase tracking-[0.18em] text-ink/60">
+                    <span className="border border-line px-3 py-1.5 text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">
                       {t.enums.status[property.status]}
                     </span>
                   </div>

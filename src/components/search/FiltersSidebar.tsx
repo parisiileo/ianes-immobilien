@@ -64,12 +64,12 @@ export function FiltersSidebar({
   return (
     <div className={cn("border border-line bg-surface", className)}>
       <header className="flex items-center justify-between border-b border-line px-6 py-4">
-        <p className="text-[0.62rem] uppercase tracking-[0.22em] text-ink/60">{t.common.filters}</p>
+        <p className="text-[0.62rem] uppercase tracking-[0.16em] text-ink/60">{t.common.filters}</p>
         {active > 0 && (
           <button
             type="button"
             onClick={() => onChange({ ...EMPTY_FILTERS })}
-            className="text-[0.62rem] uppercase tracking-[0.18em] text-champagne underline-offset-4 hover:underline"
+            className="text-[0.62rem] uppercase tracking-[0.14em] text-champagne underline-offset-4 hover:underline"
           >
             {t.common.reset}
           </button>
@@ -129,7 +129,7 @@ export function FiltersSidebar({
         />
 
         <div>
-          <p className="mb-3 text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">
+          <p className="mb-3 text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">
             {t.filters.amenities}
           </p>
           <div className="flex flex-wrap gap-1.5">
@@ -159,7 +159,7 @@ export function FiltersSidebar({
         <button
           type="button"
           onClick={onOpenAdvanced}
-          className="w-full border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+          className="w-full border border-line px-4 py-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
         >
           {t.search.openFilters}
         </button>

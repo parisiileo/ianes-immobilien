@@ -120,11 +120,7 @@ export function Hero() {
       */}
       <div className="shell relative flex min-h-[100svh] flex-col justify-between pb-[clamp(0.75rem,2.4vh,1.75rem)] pt-[max(5.75rem,min(7rem,12vh))] md:pt-[max(5.75rem,min(8rem,13vh))]">
         <div ref={contentRef} className="flex flex-1 flex-col justify-center py-[clamp(0.5rem,2.5vh,2.5rem)]">
-          <p className="animate-[fade-up_1s_var(--ease-luxe)_0.15s_both] text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-champagne-soft">
-            {t.hero.eyebrow}
-          </p>
-
-          <h1 className="mt-[clamp(0.5rem,2.2vh,1.5rem)] max-w-5xl font-display leading-[0.94]">
+          <h1 className="max-w-5xl font-display leading-[0.94]">
             {/*
               Il minimo in `rem` serve ai telefoni, dove i valori in `vw` sono
               minuscoli; la variante sotto lo abbassa sugli schermi bassi, dove
@@ -133,7 +129,9 @@ export function Hero() {
             <span className="block animate-[fade-up_1.1s_var(--ease-luxe)_0.25s_both] text-[max(1.7rem,min(3.4vw,5.6vh,2.9rem))] font-extralight text-white/90 [@media(max-height:700px)]:text-[max(1.4rem,min(3.4vw,5.6vh,2.9rem))]">
               {t.hero.titleLead}
             </span>
-            <span className="gold-text-on-dark block animate-[fade-up_1.1s_var(--ease-luxe)_0.4s_both] text-[max(3.1rem,min(7.4vw,13vh,6.4rem))] font-light italic leading-[0.88] [@media(max-height:700px)]:text-[max(2.4rem,min(7.4vw,13vh,6.4rem))]">
+            {/* Tinta piena al posto del gradiente oro: il testo sfumato è uno
+                degli stilemi più riconoscibili dei template generati. */}
+            <span className="block animate-[fade-up_1.1s_var(--ease-luxe)_0.4s_both] text-[max(3.1rem,min(7.4vw,13vh,6.4rem))] font-light italic leading-[0.88] text-champagne-soft [@media(max-height:700px)]:text-[max(2.4rem,min(7.4vw,13vh,6.4rem))]">
               {t.hero.titleAccent}
             </span>
             <span className="mt-1 block animate-[fade-up_1.1s_var(--ease-luxe)_0.55s_both] text-[max(1.15rem,min(2.3vw,3.7vh,1.9rem))] font-extralight tracking-tight text-white/75">
@@ -148,7 +146,7 @@ export function Hero() {
           <div className="mt-[clamp(0.85rem,3vh,2.25rem)] flex animate-[fade-up_1.1s_var(--ease-luxe)_0.85s_both] flex-wrap items-center gap-4 [@media(max-height:700px)]:gap-2.5">
             <Link
               href={link("proprieta")}
-              className="group flex items-center gap-3 bg-surface px-8 py-[clamp(0.7rem,1.6vh,0.875rem)] text-[0.7rem] uppercase tracking-[0.2em] text-ink transition-colors duration-300 hover:bg-champagne-soft"
+              className="group flex items-center gap-3 bg-surface px-8 py-[clamp(0.7rem,1.6vh,0.875rem)] text-[0.7rem] uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:bg-champagne-soft"
             >
               {t.hero.ctaPrimary}
               <ArrowUpRight
@@ -159,7 +157,7 @@ export function Hero() {
             </Link>
             <Link
               href={link("valutazione")}
-              className="border border-white/40 px-8 py-[clamp(0.7rem,1.6vh,0.875rem)] text-[0.7rem] uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm transition-all duration-300 hover:border-white hover:bg-white/10"
+              className="border border-white/40 px-8 py-[clamp(0.7rem,1.6vh,0.875rem)] text-[0.7rem] uppercase tracking-[0.14em] text-white/90 backdrop-blur-sm transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               {t.hero.ctaSecondary}
             </Link>
@@ -172,7 +170,7 @@ export function Hero() {
               {ratingLabel}
               <span className="text-white/60">/ {rating.best}</span>
             </p>
-            <p className="text-[0.62rem] uppercase tracking-[0.2em] text-white/60">{t.hero.stat3}</p>
+            <p className="text-[0.62rem] uppercase tracking-[0.14em] text-white/60">{t.hero.stat3}</p>
           </div>
         </div>
 
@@ -181,7 +179,7 @@ export function Hero() {
           <SearchModule tone="onPhoto" />
 
           {/* Su schermi bassi l'invito a scorrere cede il posto alla ricerca. */}
-          <div className="mt-[clamp(0.5rem,1.6vh,1rem)] flex items-center justify-center gap-3 text-[0.62rem] uppercase tracking-[0.24em] text-white/60 [@media(max-height:700px)]:hidden">
+          <div className="mt-[clamp(0.5rem,1.6vh,1rem)] flex items-center justify-center gap-3 text-[0.62rem] uppercase tracking-[0.16em] text-white/60 [@media(max-height:700px)]:hidden">
             <ArrowDown size={13} strokeWidth={1.2} className="animate-bounce" />
             {t.common.scroll}
           </div>

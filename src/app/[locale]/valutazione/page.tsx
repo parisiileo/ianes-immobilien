@@ -42,7 +42,6 @@ export default async function ValuationPage({ params }: { params: Promise<{ loca
       />
 
       <PageHeader
-        eyebrow={t.valuation.eyebrow}
         title={t.valuation.title}
         lead={t.valuation.subtitle}
         crumbs={[{ label: t.nav.valuation }]}

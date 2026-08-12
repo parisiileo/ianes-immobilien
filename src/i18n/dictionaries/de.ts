@@ -16,12 +16,12 @@ const de: Dictionary = {
         "Entdecken Sie unsere Auswahl an Luxusimmobilien zum Kauf und zur Miete in Meran, Trient, Bozen und Gröden. Erweiterte Filter, interaktive Karte, vollständige Datenblätter.",
     },
     about: {
-      title: "Über uns — Immobilienbüro für Luxusobjekte | Ianes Immobilien",
+      title: "Über uns: Immobilienbüro für Luxusobjekte | Ianes Immobilien",
       description:
         "IMMOBIL IANES S.R.L. begleitet Käufer und Verkäufer hochwertiger Immobilien zwischen Trient und Meran – mit Diskretion, technischer Kompetenz und internationalem Netzwerk.",
     },
     contact: {
-      title: "Kontakt — Vertrauliche Beratung | Ianes Immobilien",
+      title: "Kontakt: vertrauliche Beratung | Ianes Immobilien",
       description:
         "Sprechen Sie mit Ianes Immobilien: Rechtssitz in Trient, Büro in Meran. Telefon +39 340 555 5491, PEC immobilianes@pec.it.",
     },

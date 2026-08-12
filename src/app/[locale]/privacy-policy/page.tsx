@@ -43,7 +43,6 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
         )}
       />
       <PageHeader
-        eyebrow={t.footer.legalTitle}
         title={document.title}
         crumbs={[{ label: t.cookie.privacyLink }]}
       />

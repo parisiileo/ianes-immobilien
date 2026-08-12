@@ -62,13 +62,13 @@ const PRIVACY: Record<Locale, LegalDocument> = {
           "I dati sono trattati per le seguenti finalità, ciascuna con la propria base giuridica:",
         ],
         bullets: [
-          "riscontro alle richieste di informazioni e gestione del rapporto precontrattuale — art. 6.1.b GDPR (misure precontrattuali su richiesta dell'interessato);",
-          "esecuzione dell'incarico di mediazione e dei relativi adempimenti — art. 6.1.b GDPR;",
-          "obblighi di legge fiscali, contabili e antiriciclaggio — art. 6.1.c GDPR;",
-          "invio della newsletter e delle segnalazioni di immobili off-market — art. 6.1.a GDPR (consenso, revocabile in ogni momento);",
-          "cookie analitici e di marketing — art. 6.1.a GDPR (consenso raccolto tramite il banner);",
-          "sicurezza del sito e prevenzione degli invii automatizzati sui moduli — art. 6.1.f GDPR (legittimo interesse del titolare a mantenere il servizio disponibile e utilizzabile);",
-          "difesa in giudizio e tutela del credito — art. 6.1.f GDPR (legittimo interesse del titolare).",
+          "riscontro alle richieste di informazioni e gestione del rapporto precontrattuale: art. 6.1.b GDPR (misure precontrattuali su richiesta dell'interessato);",
+          "esecuzione dell'incarico di mediazione e dei relativi adempimenti: art. 6.1.b GDPR;",
+          "obblighi di legge fiscali, contabili e antiriciclaggio: art. 6.1.c GDPR;",
+          "invio della newsletter e delle segnalazioni di immobili off-market: art. 6.1.a GDPR (consenso, revocabile in ogni momento);",
+          "cookie analitici e di marketing: art. 6.1.a GDPR (consenso raccolto tramite il banner);",
+          "sicurezza del sito e prevenzione degli invii automatizzati sui moduli: art. 6.1.f GDPR (legittimo interesse del titolare a mantenere il servizio disponibile e utilizzabile);",
+          "difesa in giudizio e tutela del credito: art. 6.1.f GDPR (legittimo interesse del titolare).",
         ],
       },
       {
@@ -126,7 +126,7 @@ const PRIVACY: Record<Locale, LegalDocument> = {
         id: "reclamo",
         title: "9. Reclamo all'autorità di controllo",
         paragraphs: [
-          "L'interessato che ritenga illegittimo il trattamento può proporre reclamo al Garante per la protezione dei dati personali (Piazza Venezia 11, 00187 Roma — www.garanteprivacy.it) o ricorrere all'autorità giudiziaria.",
+          "L'interessato che ritenga illegittimo il trattamento può proporre reclamo al Garante per la protezione dei dati personali (Piazza Venezia 11, 00187 Roma; www.garanteprivacy.it) o ricorrere all'autorità giudiziaria.",
         ],
       },
       {
@@ -170,13 +170,13 @@ const PRIVACY: Record<Locale, LegalDocument> = {
         title: "3. Zwecke und Rechtsgrundlagen",
         paragraphs: ["Die Daten werden zu folgenden Zwecken mit jeweils eigener Rechtsgrundlage verarbeitet:"],
         bullets: [
-          "Beantwortung von Anfragen und Abwicklung des vorvertraglichen Verhältnisses — Art. 6 Abs. 1 lit. b DSGVO;",
-          "Durchführung des Vermittlungsauftrags und der damit verbundenen Pflichten — Art. 6 Abs. 1 lit. b DSGVO;",
-          "steuerliche, buchhalterische und geldwäscherechtliche Pflichten — Art. 6 Abs. 1 lit. c DSGVO;",
-          "Versand des Newsletters und der Off-Market-Angebote — Art. 6 Abs. 1 lit. a DSGVO (jederzeit widerrufbare Einwilligung);",
-          "Analyse- und Marketing-Cookies — Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über das Banner);",
-          "Sicherheit der Website und Abwehr automatisierter Formularübermittlungen — Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem verfügbaren und nutzbaren Dienst);",
-          "Rechtsverteidigung und Forderungssicherung — Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).",
+          "Beantwortung von Anfragen und Abwicklung des vorvertraglichen Verhältnisses: Art. 6 Abs. 1 lit. b DSGVO;",
+          "Durchführung des Vermittlungsauftrags und der damit verbundenen Pflichten: Art. 6 Abs. 1 lit. b DSGVO;",
+          "steuerliche, buchhalterische und geldwäscherechtliche Pflichten: Art. 6 Abs. 1 lit. c DSGVO;",
+          "Versand des Newsletters und der Off-Market-Angebote: Art. 6 Abs. 1 lit. a DSGVO (jederzeit widerrufbare Einwilligung);",
+          "Analyse- und Marketing-Cookies: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über das Banner);",
+          "Sicherheit der Website und Abwehr automatisierter Formularübermittlungen: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem verfügbaren und nutzbaren Dienst);",
+          "Rechtsverteidigung und Forderungssicherung: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).",
         ],
       },
       {
@@ -232,7 +232,7 @@ const PRIVACY: Record<Locale, LegalDocument> = {
         id: "reclamo",
         title: "9. Beschwerde bei der Aufsichtsbehörde",
         paragraphs: [
-          "Wer die Verarbeitung für rechtswidrig hält, kann Beschwerde bei der italienischen Datenschutzbehörde (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rom — www.garanteprivacy.it) einlegen oder den Rechtsweg beschreiten.",
+          "Wer die Verarbeitung für rechtswidrig hält, kann Beschwerde bei der italienischen Datenschutzbehörde (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rom; www.garanteprivacy.it) einlegen oder den Rechtsweg beschreiten.",
         ],
       },
       {
@@ -276,13 +276,13 @@ const PRIVACY: Record<Locale, LegalDocument> = {
         title: "3. Purposes and legal bases",
         paragraphs: ["Data is processed for the following purposes, each with its own legal basis:"],
         bullets: [
-          "responding to information requests and managing the pre-contractual relationship — Art. 6(1)(b) GDPR;",
-          "performing the brokerage mandate and related obligations — Art. 6(1)(b) GDPR;",
-          "tax, accounting and anti-money-laundering obligations — Art. 6(1)(c) GDPR;",
-          "sending the newsletter and off-market property alerts — Art. 6(1)(a) GDPR (consent, revocable at any time);",
-          "analytics and marketing cookies — Art. 6(1)(a) GDPR (consent collected via the banner);",
-          "website security and prevention of automated form submissions — Art. 6(1)(f) GDPR (legitimate interest in keeping the service available and usable);",
-          "legal defence and protection of claims — Art. 6(1)(f) GDPR (legitimate interest of the controller).",
+          "responding to information requests and managing the pre-contractual relationship: Art. 6(1)(b) GDPR;",
+          "performing the brokerage mandate and related obligations: Art. 6(1)(b) GDPR;",
+          "tax, accounting and anti-money-laundering obligations: Art. 6(1)(c) GDPR;",
+          "sending the newsletter and off-market property alerts: Art. 6(1)(a) GDPR (consent, revocable at any time);",
+          "analytics and marketing cookies: Art. 6(1)(a) GDPR (consent collected via the banner);",
+          "website security and prevention of automated form submissions: Art. 6(1)(f) GDPR (legitimate interest in keeping the service available and usable);",
+          "legal defence and protection of claims: Art. 6(1)(f) GDPR (legitimate interest of the controller).",
         ],
       },
       {
@@ -338,7 +338,7 @@ const PRIVACY: Record<Locale, LegalDocument> = {
         id: "reclamo",
         title: "9. Complaint to the supervisory authority",
         paragraphs: [
-          "If you believe the processing is unlawful you may lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rome — www.garanteprivacy.it) or seek judicial remedy.",
+          "If you believe the processing is unlawful you may lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali, Piazza Venezia 11, 00187 Rome; www.garanteprivacy.it) or seek judicial remedy.",
         ],
       },
       {
@@ -376,8 +376,8 @@ const COOKIE: Record<Locale, LegalDocument> = {
           "Vengono installati senza consenso perché indispensabili al funzionamento del sito. Su questo sito comprendono:",
         ],
         bullets: [
-          "`ianes.consent.v1` (localStorage) — memorizza le scelte espresse sul banner cookie. Durata: fino a revoca o pulizia del browser.",
-          "`ianes.locale` (cookie e localStorage) — memorizza la lingua scelta per servire la versione corretta del sito. Durata: 12 mesi.",
+          "`ianes.consent.v1` (localStorage): memorizza le scelte espresse sul banner cookie. Durata: fino a revoca o pulizia del browser.",
+          "`ianes.locale` (cookie e localStorage): memorizza la lingua scelta per servire la versione corretta del sito. Durata: 12 mesi.",
           "cookie di sessione dell'area riservata, impostati dal fornitore di autenticazione per mantenere l'accesso dello staff. Non vengono impostati durante la normale consultazione del sito.",
         ],
       },
@@ -385,7 +385,7 @@ const COOKIE: Record<Locale, LegalDocument> = {
         id: "preferenze",
         title: "3. Cookie di preferenza",
         paragraphs: [
-          "Memorizzano impostazioni scelte dall'utente — per esempio ricerche o immobili da ritrovare alla visita successiva — per non doverle reinserire a ogni accesso. Alla data di pubblicazione di questa policy il sito non installa cookie di preferenza: la categoria è predisposta per un'eventuale attivazione futura, che resterà comunque subordinata al consenso e revocabile in qualsiasi momento dal pannello delle preferenze. La lingua scelta non rientra in questa categoria: è memorizzata da un cookie tecnico, descritto al punto 2.",
+          "Memorizzano impostazioni scelte dall'utente (per esempio ricerche o immobili da ritrovare alla visita successiva) per non doverle reinserire a ogni accesso. Alla data di pubblicazione di questa policy il sito non installa cookie di preferenza: la categoria è predisposta per un'eventuale attivazione futura, che resterà comunque subordinata al consenso e revocabile in qualsiasi momento dal pannello delle preferenze. La lingua scelta non rientra in questa categoria: è memorizzata da un cookie tecnico, descritto al punto 2.",
         ],
       },
       {
@@ -440,8 +440,8 @@ const COOKIE: Record<Locale, LegalDocument> = {
           "Sie werden ohne Einwilligung gesetzt, da sie für den Betrieb der Website unerlässlich sind. Auf dieser Website sind das:",
         ],
         bullets: [
-          "`ianes.consent.v1` (localStorage) — speichert die im Cookie-Banner getroffenen Entscheidungen. Dauer: bis zum Widerruf oder zur Browser-Bereinigung.",
-          "`ianes.locale` (Cookie und localStorage) — speichert die gewählte Sprache, um die richtige Fassung auszuliefern. Dauer: 12 Monate.",
+          "`ianes.consent.v1` (localStorage): speichert die im Cookie-Banner getroffenen Entscheidungen. Dauer: bis zum Widerruf oder zur Browser-Bereinigung.",
+          "`ianes.locale` (Cookie und localStorage): speichert die gewählte Sprache, um die richtige Fassung auszuliefern. Dauer: 12 Monate.",
           "Sitzungscookies des geschützten Bereichs, die der Authentifizierungsdienst setzt, um die Anmeldung der Mitarbeitenden aufrechtzuerhalten. Beim gewöhnlichen Besuch der Website werden sie nicht gesetzt.",
         ],
       },
@@ -449,7 +449,7 @@ const COOKIE: Record<Locale, LegalDocument> = {
         id: "preferenze",
         title: "3. Präferenz-Cookies",
         paragraphs: [
-          "Sie speichern gewählte Einstellungen — etwa Suchen oder Objekte, die beim nächsten Besuch wiedergefunden werden sollen —, damit sie nicht erneut eingegeben werden müssen. Zum Zeitpunkt der Veröffentlichung dieser Richtlinie setzt die Website keine Präferenz-Cookies: Die Kategorie ist für eine spätere Aktivierung vorbereitet, die einwilligungsabhängig bleibt und jederzeit über die Einstellungen widerrufen werden kann. Die gewählte Sprache fällt nicht in diese Kategorie: Sie wird von einem technisch notwendigen Cookie gespeichert, das unter Punkt 2 beschrieben ist.",
+          "Sie speichern gewählte Einstellungen (etwa Suchen oder Objekte, die beim nächsten Besuch wiedergefunden werden sollen), damit sie nicht erneut eingegeben werden müssen. Zum Zeitpunkt der Veröffentlichung dieser Richtlinie setzt die Website keine Präferenz-Cookies: Die Kategorie ist für eine spätere Aktivierung vorbereitet, die einwilligungsabhängig bleibt und jederzeit über die Einstellungen widerrufen werden kann. Die gewählte Sprache fällt nicht in diese Kategorie: Sie wird von einem technisch notwendigen Cookie gespeichert, das unter Punkt 2 beschrieben ist.",
         ],
       },
       {
@@ -504,8 +504,8 @@ const COOKIE: Record<Locale, LegalDocument> = {
           "These are set without consent because they are essential for the website to work. On this site they are:",
         ],
         bullets: [
-          "`ianes.consent.v1` (localStorage) — stores the choices made in the cookie banner. Duration: until withdrawal or browser clean-up.",
-          "`ianes.locale` (cookie and localStorage) — stores the chosen language so the correct version is served. Duration: 12 months.",
+          "`ianes.consent.v1` (localStorage): stores the choices made in the cookie banner. Duration: until withdrawal or browser clean-up.",
+          "`ianes.locale` (cookie and localStorage): stores the chosen language so the correct version is served. Duration: 12 months.",
           "session cookies for the restricted area, set by the authentication provider to keep staff signed in. They are not set during ordinary browsing of the website.",
         ],
       },
@@ -513,7 +513,7 @@ const COOKIE: Record<Locale, LegalDocument> = {
         id: "preferenze",
         title: "3. Preference cookies",
         paragraphs: [
-          "They store settings you choose — for example searches or properties to find again on your next visit — so you do not have to enter them each time. As at the date of this policy the site sets no preference cookies: the category is prepared for possible future activation, which will remain subject to consent and can be withdrawn at any time from the preferences panel. Your chosen language does not fall into this category: it is stored by a strictly necessary cookie, described in section 2.",
+          "They store settings you choose (for example searches or properties to find again on your next visit) so you do not have to enter them each time. As at the date of this policy the site sets no preference cookies: the category is prepared for possible future activation, which will remain subject to consent and can be withdrawn at any time from the preferences panel. Your chosen language does not fall into this category: it is stored by a strictly necessary cookie, described in section 2.",
         ],
       },
       {

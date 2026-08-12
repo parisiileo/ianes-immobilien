@@ -105,10 +105,9 @@ export function ExpandingShowcase() {
             />
 
             <div className="shell relative">
-              <p className="eyebrow">{t.home.showcase.eyebrow}</p>
               <h2
                 id="showcase-title"
-                className="mt-5 max-w-3xl font-display text-[clamp(2.2rem,5.4vw,4.6rem)] leading-[1.02] text-ink"
+                className="max-w-3xl font-display text-[clamp(2.2rem,5.4vw,4.6rem)] leading-[1.02] text-ink"
               >
                 {t.home.showcase.title}
               </h2>
@@ -116,7 +115,7 @@ export function ExpandingShowcase() {
 
               <Link
                 href={link(`proprieta/${hero.slug}`)}
-                className="group mt-8 inline-flex items-center gap-3 border border-line bg-surface/40 px-7 py-3.5 text-[0.7rem] uppercase tracking-[0.2em] text-ink backdrop-blur-md transition-colors hover:border-champagne hover:text-champagne"
+                className="group mt-8 inline-flex items-center gap-3 border border-line bg-surface/40 px-7 py-3.5 text-[0.7rem] uppercase tracking-[0.14em] text-ink backdrop-blur-md transition-colors hover:border-champagne hover:text-champagne"
               >
                 {hero.content[locale].title}
                 <ArrowUpRight

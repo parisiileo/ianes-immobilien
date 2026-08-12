@@ -110,7 +110,7 @@ export function CookieBanner() {
                   <p className="mt-1 max-w-xl text-xs leading-relaxed text-ink/60">{category.text}</p>
                 </div>
                 {category.key === null ? (
-                  <span className="shrink-0 whitespace-nowrap text-[0.65rem] uppercase tracking-[0.2em] text-champagne">
+                  <span className="shrink-0 whitespace-nowrap text-[0.65rem] uppercase tracking-[0.14em] text-champagne">
                     {t.cookie.categories.necessary.always}
                   </span>
                 ) : (
@@ -143,7 +143,7 @@ export function CookieBanner() {
               <button
                 type="button"
                 onClick={() => setExpanded(true)}
-                className="border border-line px-5 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-ink/70 transition-colors hover:border-ink/40 hover:text-ink"
+                className="border border-line px-5 py-3 text-[0.7rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-ink/40 hover:text-ink"
               >
                 {t.cookie.customize}
               </button>
@@ -154,7 +154,7 @@ export function CookieBanner() {
                 rejectAll();
                 close();
               }}
-              className="border border-line px-5 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-ink/70 transition-colors hover:border-ink/40 hover:text-ink"
+              className="border border-line px-5 py-3 text-[0.7rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-ink/40 hover:text-ink"
             >
               {t.cookie.rejectAll}
             </button>
@@ -165,7 +165,7 @@ export function CookieBanner() {
                   setConsent(choices);
                   close();
                 }}
-                className="bg-champagne-deep px-5 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+                className="bg-champagne-deep px-5 py-3 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
               >
                 {t.cookie.save}
               </button>
@@ -176,7 +176,7 @@ export function CookieBanner() {
                   acceptAll();
                   close();
                 }}
-                className="bg-champagne-deep px-5 py-3 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+                className="bg-champagne-deep px-5 py-3 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
               >
                 {t.cookie.acceptAll}
               </button>

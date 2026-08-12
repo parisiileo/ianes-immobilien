@@ -80,9 +80,9 @@ export function RangeSlider({ min, max, step, value, onChange, format, label, cl
     <div className={cn("select-none", className)}>
       {label && (
         <div className="mb-4 flex items-baseline justify-between">
-          <span className="text-[0.6875rem] uppercase tracking-[0.22em] text-ink/60">{label}</span>
+          <span className="text-[0.6875rem] uppercase tracking-[0.16em] text-ink/60">{label}</span>
           <span className="font-display text-lg text-ink">
-            {format(value[0])} — {format(value[1])}
+            {format(value[0])} – {format(value[1])}
           </span>
         </div>
       )}

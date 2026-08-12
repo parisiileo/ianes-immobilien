@@ -44,7 +44,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       />
 
       <PageHeader
-        eyebrow={t.contact.eyebrow}
         title={t.contact.title}
         lead={t.contact.subtitle}
         crumbs={[{ label: t.nav.contact }]}
@@ -59,7 +58,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <li className="flex items-start gap-4">
                 <Phone size={16} strokeWidth={1.3} className="mt-1 shrink-0 text-champagne" />
                 <div>
-                  <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.contact.phoneLabel}</p>
+                  <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.contact.phoneLabel}</p>
                   <a
                     href={`tel:${COMPANY.phoneHref}`}
                     className="mt-1 block font-display text-2xl text-ink transition-colors hover:text-champagne"
@@ -72,7 +71,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <li className="flex items-start gap-4">
                 <Mail size={16} strokeWidth={1.3} className="mt-1 shrink-0 text-champagne" />
                 <div>
-                  <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.contact.pecLabel}</p>
+                  <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.contact.pecLabel}</p>
                   <a
                     href={`mailto:${COMPANY.pec}`}
                     className="mt-1 block text-lg text-ink transition-colors hover:text-champagne"
@@ -86,7 +85,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 <MapPin size={16} strokeWidth={1.3} className="mt-1 shrink-0 text-champagne" />
                 <div className="space-y-4">
                   <div>
-                    <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.about.localOffice}</p>
+                    <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.about.localOffice}</p>
                     <address className="mt-1 text-sm not-italic leading-relaxed text-ink/70">
                       {COMPANY.localOffice.street}
                       <br />
@@ -94,7 +93,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                     </address>
                   </div>
                   <div>
-                    <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">
+                    <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">
                       {t.about.registeredOffice}
                     </p>
                     <address className="mt-1 text-sm not-italic leading-relaxed text-ink/70">
@@ -110,7 +109,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <li className="flex items-start gap-4">
                 <Clock size={16} strokeWidth={1.3} className="mt-1 shrink-0 text-champagne" />
                 <div>
-                  <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.contact.hoursTitle}</p>
+                  <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.contact.hoursTitle}</p>
                   <ul className="mt-2 space-y-1 text-sm text-ink/70">
                     <li>{t.contact.hoursWeek}</li>
                     <li>{t.contact.hoursSat}</li>

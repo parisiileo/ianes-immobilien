@@ -143,7 +143,7 @@ export function MediaUploader({
             onChange([...images, { src: urlValue.trim(), alt: emptyAlt() }]);
             setUrlValue("");
           }}
-          className="flex shrink-0 items-center gap-2 border border-line px-5 text-[0.65rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+          className="flex shrink-0 items-center gap-2 border border-line px-5 text-[0.65rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
         >
           <Link2 size={13} strokeWidth={1.4} />
           {t.admin.form.addImageUrl}

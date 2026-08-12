@@ -28,7 +28,7 @@ export function CtaBand() {
           <Reveal delay={0.18} className="flex flex-wrap gap-4">
             <Link
               href={link("valutazione")}
-              className="group flex items-center gap-3 bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink"
+              className="group flex items-center gap-3 bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink"
             >
               {t.home.cta.button}
               <ArrowUpRight
@@ -39,7 +39,7 @@ export function CtaBand() {
             </Link>
             <a
               href={`tel:${COMPANY.phoneHref}`}
-              className="flex items-center gap-3 border border-line px-8 py-4 text-[0.7rem] uppercase tracking-[0.2em] text-ink/80 transition-all hover:border-champagne hover:text-champagne"
+              className="flex items-center gap-3 border border-line px-8 py-4 text-[0.7rem] uppercase tracking-[0.14em] text-ink/80 transition-all hover:border-champagne hover:text-champagne"
             >
               <Phone size={14} strokeWidth={1.4} />
               {t.home.cta.call}

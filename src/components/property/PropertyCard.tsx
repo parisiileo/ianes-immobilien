@@ -75,13 +75,13 @@ export function PropertyCard({
           <div className="absolute left-4 top-4 flex flex-wrap gap-2">
             <span
               className={cn(
-                "border px-3 py-1.5 text-[0.58rem] uppercase tracking-[0.18em] backdrop-blur-md",
+                "border px-3 py-1.5 text-[0.58rem] uppercase tracking-[0.14em] backdrop-blur-md",
                 statusTone,
               )}
             >
               {t.enums.status[property.status]}
             </span>
-            <span className="border border-white/40 bg-black/35 px-3 py-1.5 text-[0.58rem] uppercase tracking-[0.18em] text-white/90 backdrop-blur-md">
+            <span className="border border-white/40 bg-black/35 px-3 py-1.5 text-[0.58rem] uppercase tracking-[0.14em] text-white/90 backdrop-blur-md">
               {t.enums.listingTypeShort[property.listingType]}
             </span>
           </div>
@@ -93,7 +93,7 @@ export function PropertyCard({
       </Link>
 
       <div className="flex flex-1 flex-col p-6 xl:p-8">
-        <p className="text-[0.6rem] uppercase tracking-[0.24em] text-champagne">
+        <p className="text-[0.6rem] uppercase tracking-[0.16em] text-champagne">
           {property.location.city}
           {property.location.zone ? ` · ${property.location.zone}` : ""}
         </p>

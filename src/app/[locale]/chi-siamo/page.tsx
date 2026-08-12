@@ -49,7 +49,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       />
 
       <PageHeader
-        eyebrow={t.about.eyebrow}
         title={t.about.title}
         lead={t.about.lead}
         crumbs={[{ label: t.nav.about }]}
@@ -75,7 +74,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               { label: t.contact.pecLabel, value: COMPANY.pec },
             ].map((item) => (
               <div key={item.label} className="bg-surface px-7 py-5">
-                <p className="text-[0.6rem] uppercase tracking-[0.2em] text-ink/60">{item.label}</p>
+                <p className="text-[0.6rem] uppercase tracking-[0.14em] text-ink/60">{item.label}</p>
                 <p className="mt-2 text-sm leading-relaxed text-ink/80">{item.value}</p>
               </div>
             ))}
@@ -160,15 +159,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
           <dl className="mt-12 grid gap-8 border-t border-line pt-10 text-xs text-ink/60 sm:grid-cols-3">
             <div>
-              <dt className="uppercase tracking-[0.2em] text-ink/60">{t.footer.vat}</dt>
+              <dt className="uppercase tracking-[0.14em] text-ink/60">{t.footer.vat}</dt>
               <dd className="mt-2 text-ink/70">{COMPANY.vat}</dd>
             </div>
             <div>
-              <dt className="uppercase tracking-[0.2em] text-ink/60">{t.footer.rea}</dt>
+              <dt className="uppercase tracking-[0.14em] text-ink/60">{t.footer.rea}</dt>
               <dd className="mt-2 text-ink/70">{COMPANY.rea}</dd>
             </div>
             <div>
-              <dt className="uppercase tracking-[0.2em] text-ink/60">PEC</dt>
+              <dt className="uppercase tracking-[0.14em] text-ink/60">PEC</dt>
               <dd className="mt-2 text-ink/70">{COMPANY.pec}</dd>
             </div>
           </dl>

@@ -54,7 +54,7 @@ export function LanguageSwitcher({ tone = "default" }: { tone?: "default" | "onP
         aria-label={t.nav.changeLanguage}
         aria-expanded={open}
         className={cn(
-          "flex items-center gap-2 px-2.5 py-2 text-[0.6875rem] uppercase tracking-[0.22em] transition-colors duration-300",
+          "flex items-center gap-2 px-2.5 py-2 text-[0.6875rem] uppercase tracking-[0.16em] transition-colors duration-300",
           onPhoto ? "text-white/85 hover:text-white" : "text-ink/60 hover:text-ink",
         )}
       >

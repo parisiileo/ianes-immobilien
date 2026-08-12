@@ -44,7 +44,7 @@ export function organizationSchema(locale: Locale): Json {
     },
     location: {
       "@type": "Place",
-      name: `${COMPANY.brandName} — ${COMPANY.localOffice.city}`,
+      name: `${COMPANY.brandName}, ${COMPANY.localOffice.city}`,
       address: {
         "@type": "PostalAddress",
         streetAddress: COMPANY.localOffice.street,

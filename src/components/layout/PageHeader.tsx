@@ -5,14 +5,13 @@ import { useLocale } from "@/i18n/LocaleProvider";
 import { Reveal, SplitReveal } from "@/components/ui/SplitText";
 
 interface PageHeaderProps {
-  eyebrow: string;
   title: string;
   lead?: string;
   /** Briciole di pane visibili: la versione JSON-LD è generata nel server component. */
   crumbs?: Array<{ label: string; path?: string }>;
 }
 
-export function PageHeader({ eyebrow, title, lead, crumbs }: PageHeaderProps) {
+export function PageHeader({ title, lead, crumbs }: PageHeaderProps) {
   const { t, link } = useLocale();
 
   return (
@@ -20,7 +19,7 @@ export function PageHeader({ eyebrow, title, lead, crumbs }: PageHeaderProps) {
       <div className="shell pb-16">
         {crumbs && crumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-2 text-[0.65rem] uppercase tracking-[0.2em] text-ink/60">
+            <ol className="flex flex-wrap items-center gap-2 text-[0.65rem] uppercase tracking-[0.14em] text-ink/60">
               <li>
                 <Link href={link()} className="transition-colors hover:text-champagne">
                   {t.nav.home}
@@ -42,12 +41,9 @@ export function PageHeader({ eyebrow, title, lead, crumbs }: PageHeaderProps) {
           </nav>
         )}
 
-        <Reveal>
-          <p className="eyebrow">{eyebrow}</p>
-        </Reveal>
         <SplitReveal
           as="h1"
-          className="mt-6 max-w-4xl font-display text-[clamp(2.6rem,6vw,5rem)] leading-[1.01] text-ink"
+          className="max-w-4xl font-display text-[clamp(2.6rem,6vw,5rem)] leading-[1.01] text-ink"
         >
           {title}
         </SplitReveal>

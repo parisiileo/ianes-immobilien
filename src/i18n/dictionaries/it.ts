@@ -15,12 +15,12 @@ const it = {
         "Esplora la selezione di immobili di lusso in vendita e in affitto a Merano, Trento, Bolzano e Val Gardena. Filtri avanzati, mappa interattiva, schede tecniche complete.",
     },
     about: {
-      title: "Chi siamo — Agenzia immobiliare di lusso | Ianes Immobilien",
+      title: "Chi siamo: agenzia immobiliare di lusso | Ianes Immobilien",
       description:
         "IMMOBIL IANES S.R.L. accompagna acquirenti e venditori di immobili di pregio tra Trento e Merano con discrezione, competenza tecnica e una rete internazionale.",
     },
     contact: {
-      title: "Contatti — Consulenza riservata | Ianes Immobilien",
+      title: "Contatti: consulenza riservata | Ianes Immobilien",
       description:
         "Parla con Ianes Immobilien: sede legale a Trento, ufficio a Merano. Telefono +39 340 555 5491, PEC immobilianes@pec.it.",
     },

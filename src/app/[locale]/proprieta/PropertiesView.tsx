@@ -131,8 +131,7 @@ export function PropertiesView() {
       <section className="border-b border-line bg-surface-soft pt-32 md:pt-40">
         <div className="shell-wide flex flex-wrap items-end justify-between gap-8 pb-12">
           <div className="max-w-2xl">
-            <p className="eyebrow">{t.nav.properties}</p>
-            <h1 className="mt-5 font-display text-[clamp(2.6rem,6vw,4.6rem)] leading-[1.02] text-ink">
+            <h1 className="font-display text-[clamp(2.6rem,6vw,4.6rem)] leading-[1.02] text-ink">
               {t.listing.title}
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-ink/60">{t.listing.subtitle}</p>
@@ -140,7 +139,7 @@ export function PropertiesView() {
 
           <p className="font-display text-[clamp(2.4rem,5vw,3.6rem)] leading-none text-champagne">
             {String(results.length).padStart(2, "0")}
-            <span className="ml-3 align-middle text-[0.62rem] uppercase tracking-[0.22em] text-ink/60">
+            <span className="ml-3 align-middle text-[0.62rem] uppercase tracking-[0.16em] text-ink/60">
               {results.length === 1 ? t.common.result : t.common.results}
             </span>
           </p>
@@ -180,7 +179,7 @@ export function PropertiesView() {
               <button
                 type="button"
                 onClick={() => setPanelOpen(true)}
-                className="flex items-center gap-2 border border-line px-4 py-2.5 text-[0.65rem] uppercase tracking-[0.18em] text-ink/75 transition-all hover:border-champagne hover:text-champagne lg:hidden"
+                className="flex items-center gap-2 border border-line px-4 py-2.5 text-[0.65rem] uppercase tracking-[0.14em] text-ink/75 transition-all hover:border-champagne hover:text-champagne lg:hidden"
               >
                 <SlidersHorizontal size={14} strokeWidth={1.4} />
                 {t.common.filters}
@@ -196,7 +195,7 @@ export function PropertiesView() {
                 onClick={() => setMobileMapOpen((v) => !v)}
                 aria-pressed={mobileMapOpen}
                 className={cn(
-                  "flex items-center gap-2 border px-4 py-2.5 text-[0.65rem] uppercase tracking-[0.18em] transition-all lg:hidden",
+                  "flex items-center gap-2 border px-4 py-2.5 text-[0.65rem] uppercase tracking-[0.14em] transition-all lg:hidden",
                   mobileMapOpen
                     ? "border-champagne text-champagne"
                     : "border-line text-ink/75 hover:border-champagne hover:text-champagne",
@@ -211,7 +210,7 @@ export function PropertiesView() {
               </p>
 
               <div className="ml-auto flex items-center gap-3">
-                <span className="hidden text-[0.62rem] uppercase tracking-[0.18em] text-ink/60 sm:inline">
+                <span className="hidden text-[0.62rem] uppercase tracking-[0.14em] text-ink/60 sm:inline">
                   {t.listing.sortBy}
                 </span>
                 <Select
@@ -251,7 +250,7 @@ export function PropertiesView() {
                 <button
                   type="button"
                   onClick={() => updateFilters({ ...EMPTY_FILTERS })}
-                  className="ml-1 text-[0.65rem] uppercase tracking-[0.18em] text-ink/60 underline-offset-4 hover:text-ink hover:underline"
+                  className="ml-1 text-[0.65rem] uppercase tracking-[0.14em] text-ink/60 underline-offset-4 hover:text-ink hover:underline"
                 >
                   {t.common.reset}
                 </button>
@@ -267,7 +266,7 @@ export function PropertiesView() {
                 </p>
                 <Link
                   href={link("contatti")}
-                  className="mt-8 inline-block border border-line px-6 py-3 text-[0.68rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+                  className="mt-8 inline-block border border-line px-6 py-3 text-[0.68rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
                 >
                   {t.nav.contact}
                 </Link>
@@ -279,7 +278,7 @@ export function PropertiesView() {
                 <button
                   type="button"
                   onClick={() => updateFilters({ ...EMPTY_FILTERS })}
-                  className="mt-8 border border-line px-6 py-3 text-[0.68rem] uppercase tracking-[0.18em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+                  className="mt-8 border border-line px-6 py-3 text-[0.68rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
                 >
                   {t.filters.clearAll}
                 </button>

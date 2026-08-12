@@ -23,12 +23,9 @@ export function GoogleRating() {
       <div className="shell">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-end">
           <div>
-            <Reveal>
-              <p className="eyebrow">{t.home.reviews.eyebrow}</p>
-            </Reveal>
             <SplitReveal
               as="h2"
-              className="mt-5 font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-none text-ink"
+              className="font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-none text-ink"
             >
               {t.home.reviews.title}
             </SplitReveal>
@@ -71,7 +68,7 @@ export function GoogleRating() {
                 )}`}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="group flex items-center gap-3 border-b border-line pb-2 text-[0.7rem] uppercase tracking-[0.2em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
+                className="group flex items-center gap-3 border-b border-line pb-2 text-[0.7rem] uppercase tracking-[0.14em] text-ink/70 transition-colors hover:border-champagne hover:text-champagne"
               >
                 {t.home.reviews.cta}
                 <ArrowUpRight

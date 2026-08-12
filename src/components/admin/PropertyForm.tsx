@@ -126,7 +126,7 @@ export function PropertyForm({
       {/* Barra azioni */}
       <div className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border border-line bg-surface/92 px-5 py-4 backdrop-blur-xl">
         <div>
-          <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{draft.reference}</p>
+          <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{draft.reference}</p>
           <p className="font-display text-xl text-ink">{draft.content.it.title || t.admin.list.newProperty}</p>
         </div>
 
@@ -134,7 +134,7 @@ export function PropertyForm({
           <Link
             href={link(`proprieta/${draft.slug}`)}
             target="_blank"
-            className="flex items-center gap-2 border border-line px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
+            className="flex items-center gap-2 border border-line px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-champagne hover:text-champagne"
           >
             <ExternalLink size={13} strokeWidth={1.4} />
             {t.admin.form.preview}
@@ -142,7 +142,7 @@ export function PropertyForm({
           <button
             type="button"
             onClick={onCancel}
-            className="border border-line px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.18em] text-ink/65 transition-colors hover:border-ink/40 hover:text-ink"
+            className="border border-line px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.14em] text-ink/65 transition-colors hover:border-ink/40 hover:text-ink"
           >
             {t.admin.form.cancel}
           </button>
@@ -150,7 +150,7 @@ export function PropertyForm({
             type="button"
             onClick={() => void submit()}
             disabled={busy}
-            className="bg-champagne-deep px-6 py-2.5 text-[0.62rem] uppercase tracking-[0.18em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
+            className="bg-champagne-deep px-6 py-2.5 text-[0.62rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
           >
             {busy ? t.common.loading : t.admin.form.save}
           </button>
@@ -277,7 +277,7 @@ export function PropertyForm({
           </div>
 
           <div>
-            <p className="mb-3 text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.admin.form.amenities}</p>
+            <p className="mb-3 text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.admin.form.amenities}</p>
             <div className="flex flex-wrap gap-2">
               {AMENITIES.map((amenity) => (
                 <Chip
@@ -343,7 +343,7 @@ export function PropertyForm({
               type="button"
               onClick={() => setContentLocale(code)}
               className={cn(
-                "flex-1 px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.2em] transition-colors",
+                "flex-1 px-4 py-2.5 text-[0.62rem] uppercase tracking-[0.14em] transition-colors",
                 contentLocale === code ? "bg-champagne-deep text-surface" : "text-ink/60 hover:text-ink",
               )}
             >
@@ -424,7 +424,7 @@ export function PropertyForm({
         {/* Planimetrie */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <p className="text-[0.62rem] uppercase tracking-[0.2em] text-ink/60">{t.admin.form.floorPlans}</p>
+            <p className="text-[0.62rem] uppercase tracking-[0.14em] text-ink/60">{t.admin.form.floorPlans}</p>
             <button
               type="button"
               onClick={() =>
@@ -438,7 +438,7 @@ export function PropertyForm({
                   },
                 ])
               }
-              className="flex items-center gap-2 border border-line px-3 py-2 text-[0.6rem] uppercase tracking-[0.18em] text-ink/60 hover:border-champagne hover:text-champagne"
+              className="flex items-center gap-2 border border-line px-3 py-2 text-[0.6rem] uppercase tracking-[0.14em] text-ink/60 hover:border-champagne hover:text-champagne"
             >
               <Plus size={12} strokeWidth={1.5} />
               {t.admin.form.addBlock}
@@ -505,7 +505,7 @@ export function PropertyForm({
             type="button"
             onClick={downloadPdf}
             disabled={busy}
-            className="flex items-center gap-3 bg-champagne-deep px-7 py-3.5 text-[0.65rem] uppercase tracking-[0.18em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
+            className="flex items-center gap-3 bg-champagne-deep px-7 py-3.5 text-[0.65rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60"
           >
             <FileDown size={14} strokeWidth={1.5} />
             {busy ? t.admin.pdf.generating : t.admin.pdf.generate}

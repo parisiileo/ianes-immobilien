@@ -143,15 +143,14 @@ export function HorizontalCollection() {
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden py-14 md:py-20">
         <div className="shell mb-8 flex flex-wrap items-end justify-between gap-6 md:mb-10">
           <div>
-            <p className="eyebrow">{t.home.horizontal.eyebrow}</p>
             <h2
               id="collection-title"
-              className="mt-4 font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-none text-ink"
+              className="font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-none text-ink"
             >
               {t.home.horizontal.title}
             </h2>
           </div>
-          <p className="flex items-center gap-3 text-[0.65rem] uppercase tracking-[0.22em] text-ink/60">
+          <p className="flex items-center gap-3 text-[0.65rem] uppercase tracking-[0.16em] text-ink/60">
             {t.home.horizontal.hint}
             <ArrowRight size={14} strokeWidth={1.2} />
           </p>
@@ -182,7 +181,7 @@ export function HorizontalCollection() {
                 </span>
 
                 <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                  <p className="text-[0.6rem] uppercase tracking-[0.24em] text-champagne-soft">
+                  <p className="text-[0.6rem] uppercase tracking-[0.16em] text-champagne-soft">
                     {property.location.city}
                   </p>
                   <h3 className="mt-2 font-display text-2xl leading-tight text-white">

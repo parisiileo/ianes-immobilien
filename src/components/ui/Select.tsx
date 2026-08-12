@@ -234,7 +234,7 @@ export function Select<T extends string>({
       {label && (
         <span
           className={cn(
-            "mb-2 block text-[0.6875rem] uppercase tracking-[0.22em]",
+            "mb-2 block text-[0.6875rem] uppercase tracking-[0.16em]",
             onPhoto ? "text-white/70" : "text-ink/60",
           )}
         >

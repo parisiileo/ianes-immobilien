@@ -16,12 +16,12 @@ const en: Dictionary = {
         "Browse our selection of luxury homes for sale and rent in Merano, Trento, Bolzano and Val Gardena. Advanced filters, interactive map, full technical data sheets.",
     },
     about: {
-      title: "About us — Luxury real estate agency | Ianes Immobilien",
+      title: "About us: luxury real estate agency | Ianes Immobilien",
       description:
         "IMMOBIL IANES S.R.L. advises buyers and sellers of prime property between Trento and Merano with discretion, technical expertise and an international network.",
     },
     contact: {
-      title: "Contact — Private consultation | Ianes Immobilien",
+      title: "Contact: private consultation | Ianes Immobilien",
       description:
         "Talk to Ianes Immobilien: registered office in Trento, office in Merano. Phone +39 340 555 5491, certified email immobilianes@pec.it.",
     },
@@ -393,7 +393,7 @@ const en: Dictionary = {
     body: [
       "Brokerage is carried out under Italian Law 39/1989: we assist sellers and buyers through the negotiation, the review of the documentation and the formalities up to the notarial deed. Under Article 1755 of the Italian Civil Code the commission falls due when the deal is concluded.",
       "Before publishing a property we verify its cadastral records, planning compliance and energy performance certificate. Every listing on this site carries the same technical data we hand to interested buyers.",
-      "We work in Italian, German and English — the three languages in which this website and the property documentation are also available.",
+      "We work in Italian, German and English, the three languages in which this website and the property documentation are also available.",
     ],
     values: [
       {

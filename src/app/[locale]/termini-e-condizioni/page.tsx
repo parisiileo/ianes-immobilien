@@ -43,7 +43,6 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         )}
       />
       <PageHeader
-        eyebrow={t.footer.legalTitle}
         title={document.title}
         crumbs={[{ label: t.meta.terms.title.split(" | ")[0] }]}
       />

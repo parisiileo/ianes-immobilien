@@ -33,7 +33,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: `proprieta/${property.slug}`,
-    title: `${content.title} — ${property.location.city} | Ianes Immobilien`,
+    title: `${content.title}, ${property.location.city} | Ianes Immobilien`,
     description: content.metaDescription,
     image: property.images[0]?.src,
     imageAlt: property.images[0]?.alt[locale],

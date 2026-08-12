@@ -117,7 +117,7 @@ export function GalleryCarousel({
             <button
               type="button"
               onClick={() => onOpen(index)}
-              aria-label={`${t.property.galleryOpen} — ${image.alt[locale]}`}
+              aria-label={`${t.property.galleryOpen}: ${image.alt[locale]}`}
               className="group relative block h-[clamp(16rem,52vh,30rem)] w-full overflow-hidden bg-surface-soft"
             >
               <Image
@@ -144,7 +144,7 @@ export function GalleryCarousel({
       </ul>
 
       <div className="mt-6 flex items-center justify-between gap-6">
-        <p className="text-[0.65rem] uppercase tracking-[0.2em] text-ink/60">{t.property.galleryHint}</p>
+        <p className="text-[0.65rem] uppercase tracking-[0.14em] text-ink/60">{t.property.galleryHint}</p>
         <div className="flex gap-2">
           <button
             type="button"

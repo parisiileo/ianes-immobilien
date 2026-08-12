@@ -29,7 +29,7 @@ export function ContactForm() {
     const rif = new URLSearchParams(window.location.search).get("rif");
     if (rif) {
       setReference(rif);
-      setForm((f) => ({ ...f, message: `${t.common.reference} ${rif} — ` }));
+      setForm((f) => ({ ...f, message: `${t.common.reference} ${rif}: ` }));
     }
   }, [t.common.reference]);
 
@@ -157,7 +157,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={busy}
-          className="w-full bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink disabled:opacity-60 sm:w-auto"
+          className="w-full bg-champagne-deep px-8 py-4 text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60 sm:w-auto"
         >
           {busy ? t.common.sending : t.contact.submit}
         </button>

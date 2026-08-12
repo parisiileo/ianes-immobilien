@@ -16,12 +16,9 @@ export function Regions() {
     <section className="relative border-t border-line bg-surface py-28 md:py-36" aria-labelledby="regions-title">
       <div className="shell">
         <div className="max-w-2xl">
-          <Reveal>
-            <p className="eyebrow">{t.home.regions.eyebrow}</p>
-          </Reveal>
           <SplitReveal
             as="h2"
-            className="mt-5 font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-[1.04] text-ink"
+            className="font-display text-[clamp(2.2rem,4.6vw,3.8rem)] leading-[1.04] text-ink"
           >
             {t.home.regions.title}
           </SplitReveal>
@@ -44,7 +41,7 @@ export function Regions() {
               )}
             >
               <span className="flex items-baseline gap-6">
-                <span className="w-8 text-[0.65rem] tracking-[0.2em] text-champagne/70">
+                <span className="w-8 text-[0.65rem] tracking-[0.14em] text-champagne/70">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="font-display text-[clamp(1.6rem,3.4vw,2.8rem)] leading-none">{region.name}</span>
@@ -64,7 +61,7 @@ export function Regions() {
         <Reveal delay={0.1}>
           <Link
             href={link("proprieta")}
-            className="group mt-10 inline-flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.22em] text-champagne"
+            className="group mt-10 inline-flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.16em] text-champagne"
           >
             {t.common.viewAll}
             <ArrowUpRight

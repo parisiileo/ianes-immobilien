@@ -58,10 +58,9 @@ export function Newsletter() {
       <div className="shell">
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-24">
           <Reveal>
-            <p className="eyebrow">{t.home.newsletter.eyebrow}</p>
             <h2
               id="newsletter-title"
-              className="mt-5 max-w-md font-display text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.04] text-ink"
+              className="max-w-md font-display text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.04] text-ink"
             >
               {t.home.newsletter.title}
             </h2>
@@ -136,7 +135,7 @@ export function Newsletter() {
                   disabled={busy}
                   className={cn(
                     "group flex w-full items-center justify-center gap-3 bg-champagne-deep px-8 py-4",
-                    "text-[0.7rem] uppercase tracking-[0.2em] text-surface transition-colors hover:bg-ink disabled:opacity-60 sm:w-auto",
+                    "text-[0.7rem] uppercase tracking-[0.14em] text-surface transition-colors hover:bg-ink disabled:opacity-60 sm:w-auto",
                   )}
                 >
                   {busy ? t.common.sending : t.home.newsletter.submit}

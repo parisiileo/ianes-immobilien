@@ -16,12 +16,9 @@ export function Services() {
       <div className="shell">
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <Reveal>
-              <p className="eyebrow">{t.home.services.eyebrow}</p>
-            </Reveal>
             <SplitReveal
               as="h2"
-              className="mt-5 max-w-md font-display text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.04] text-ink"
+              className="max-w-md font-display text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.04] text-ink"
             >
               {t.home.services.title}
             </SplitReveal>
